@@ -15,58 +15,70 @@
     <section class="main_container">
 
         <div class="first_column">
-            <div class="logo_container">
-            </div>
+            <img src="./assets/cream_cat.svg" alt="cream cat">
+            <h2>Common Cat<br>Space Program</h2>
+        </div>
+
+        <div class="first_row_mobile">
+            <img src="./assets/cream_cat.svg" alt="cream cat">
+            <h2>Common Cat<br>Space Program</h2>
         </div>
 
         <div class="second_column">
             <div class="form_title">
-                <h1>Common cat space program<br>Help a kittie reach the stars</h1>
-                <p>The international cat space program is looking for donors for its 22nd anual cat launch. <br>If you
-                    are interested in donating fill our form below, or call us at <a
+                <h1>Common cat space program,<br>Help a kittie reach the stars!</h1>
+                <p>The international cat space program is looking for donors for its 22nd annual cat launch. <br>If you
+                    are interested in donating fill our form below or call us at <a
                         href="tel:888-878-9900">888-878-9900</a></p>
             </div>
 
-            <form id="signup_form" class="signup_form" action="#" method="post">
+            <form id="signup_form" class="signup_form" action="https://httpbin.org/post" method="post">
                 <div class="form_column1">
                     <div>
                         <label for="first_name">*First Name:</label>
-                        <input type="text" id="first_name" required>
+                        <input type="text" id="first_name" placeholder="Enter your first name" required>
+                    </div>
+                    <div>
+                        <label for="last_name">*Last Name:</label>
+                        <input type="text" id="last_name" placeholder="Enter your last name" required>
                     </div>
                     <div>
                         <label for="email">*Email:</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div>
-                        <label for="password">*Password:</label>
-                        <input type="password" id="password" required>
+                        <input type="email" id="email" placeholder="Valid email" required>
                     </div>
                 </div>
                 <div class="form_column2">
                     <div>
-                        <label for="last_name">*Last Name:</label>
-                        <input type="text" id="last_name" required>
-                    </div>
-
-                    <div>
                         <label for="phone">*Phone:</label>
-                        <input type="tel" id="phone" required>
+                        <input type="tel" id="phone" pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+                            placeholder="(XXX) XXX-XXXX" required>
+                    </div>
+                    <div>
+                        <label for="password">*Password:</label>
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                            title="Must contain at least one number, one uppercase letter, one lowercase letter, and at least 6 or more characters"
+                            placeholder="Enter password" required>
                     </div>
                     <div>
                         <label for="confirm_password">*Confirm Password:</label>
-                        <input type="password" id="confirm_password" required>
+                        <input type="password" id="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                            title="Must contain at least one number, one uppercase letter, one lowercase letter, and at least 6 or more characters"
+                            placeholder="Confirm password" required>
                     </div>
                 </div>
             </form>
             <div class="submit_section">
-                <button class="submit_form" type="submit" form="signup_form">Sign Up Today</button>
+                <button class="submit_form_btn" type="submit" form="signup_form">Sign Up Today</button>
                 <p>Already have an account? <span><a href="#">Login</a></span></p>
             </div>
         </div>
-
     </section>
+    <footer>
+        <p>Copyright © <a href="https://www.theodinproject.com/">The Odin Project </a>
+            <script>document.write(new Date().getFullYear())</script> | Photo by <a href="https://www.pexels.com/photo/close-up-photography-of-cat-979003/">Isabella Mendes</a> | Created by <a
+                href="https://github.com/bojorquezc">Conrado Bojorquez</a>
+        </p>
+    </footer>
 </body>
 
 </html>
-
-<!-- https://www.pexels.com/photo/close-up-photography-of-cat-979003/ -->
